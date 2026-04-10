@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사과게임</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="container glass">
+        <header>
+            <h1>Apple Game <span class="badge">10</span></h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="label">Time</span>
+                    <span class="value" id="timer">02:00</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Score</span>
+                    <span class="value" id="score">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-container" id="gameContainer">
+            <div id="grid" class="grid"></div>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="modal glass fade-in">
+                <h2 id="modalTitle">사과게임</h2>
+                <p id="modalDesc">상자를 드래그해서 합이 10이 되도록 만드세요!</p>
+                <button id="startBtn" class="btn">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
